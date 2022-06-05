@@ -5,7 +5,27 @@ const iframe = document.querySelector("#main-content > iframe")
 let toggle = false;
 
 const currentTopic = document.getElementById("currentTopic")
+// // Delete Code Below When Not working on the project
+// addEventListener("load",e => {
 
+//     let selectPage = currentTopic.nextElementSibling.getAttribute("href")
+//     mainExplain.classList.add("hide")
+//     iframe.src=selectPage
+
+
+//     function ShowTopics() {
+//         topics.forEach(topic => {
+//             let parent = topic.parentElement
+//             let subTopic = parent.querySelector("ul")
+//             if(subTopic.classList.contains("hide")){
+//                 subTopic.classList.remove("hide")
+//             }
+//         })
+//     }
+//     ShowTopics()
+    
+// })
+// // Delete code Above
 function hideTopics() {
     topics.forEach(topic => {
         let parent = topic.parentElement
@@ -29,10 +49,9 @@ topics.forEach(topic => {
 
         let parent = e.target.parentElement
         let subUl = parent.querySelector("ul")
-        console.log(subUl)
 
         let topicText = e.target.innerText;
-        console.log(topicText)
+
         let subTopicTxt = ""
         let href = ""
 
@@ -51,11 +70,9 @@ topics.forEach(topic => {
                 e.preventDefault();
                 let pageAnchor = e.target.nextElementSibling
                 href = pageAnchor.getAttribute("href")
-                console.log(href)
                 
                 subTopicTxt = e.target.innerText
-                console.log(subTopicTxt)
-       
+                
                 if(!toggle){
                     mainExplain.classList.add("hide")
                     iframe.src = href
@@ -77,10 +94,6 @@ topics.forEach(topic => {
     })
 })
 
-// addEventListener("load",e => {
 
-//     let selectPage = currentTopic.nextElementSibling.getAttribute("href")
 
-//     mainExplain.classList.add("hide")
-//     iframe.src=selectPage
-// })
+
