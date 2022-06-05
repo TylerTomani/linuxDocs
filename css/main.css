@@ -10,7 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+
 }
 .main-document-header-container > div#title {
     margin: 0 2.5%;
@@ -65,9 +65,20 @@ div.article-actions-container > .btn {
 .hide {
     display: none
 }
-@media screen and  (min-width:500px) {
+@media screen and  (max-width:545px) {
+    .main-document-header-container {
+        font-size: 60%;
+    }
+    /* .main-document-header-container > div#main-img-icon {
+        min-width: 175px;
+    }
+    .main-document-header-container > #explain {
+        padding: 0 1rem;
+    } */
     #sidebar-links{
-        font-size: 50%;
+        font-size: 60%;
+        width: 150px;
+        overflow-x: scroll;
     }
     
 }
