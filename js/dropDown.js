@@ -5,27 +5,27 @@ const iframe = document.querySelector("#main-content > iframe")
 let toggle = false;
 
 const currentTopic = document.getElementById("currentTopic")
-// // Delete Code Below When Not working on the project
-// addEventListener("load",e => {
+// Delete Code Below When Not working on the project
+addEventListener("load",e => {
 
-//     let selectPage = currentTopic.nextElementSibling.getAttribute("href")
-//     mainExplain.classList.add("hide")
-//     iframe.src=selectPage
+    let selectPage = currentTopic.nextElementSibling.getAttribute("href")
+    mainExplain.classList.add("hide")
+    iframe.src=selectPage
 
 
-//     function ShowTopics() {
-//         topics.forEach(topic => {
-//             let parent = topic.parentElement
-//             let subTopic = parent.querySelector("ul")
-//             if(subTopic.classList.contains("hide")){
-//                 subTopic.classList.remove("hide")
-//             }
-//         })
-//     }
-//     ShowTopics()
+    function ShowTopics() {
+        topics.forEach(topic => {
+            let parent = topic.parentElement
+            let subTopic = parent.querySelector("ul")
+            if(subTopic.classList.contains("hide")){
+                subTopic.classList.remove("hide")
+            }
+        })
+    }
+    ShowTopics()
     
-// })
-// // Delete code Above
+})
+// Delete code Above
 function hideTopics() {
     topics.forEach(topic => {
         let parent = topic.parentElement
