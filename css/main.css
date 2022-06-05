@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.main-document-header-container {
+    border-bottom: 2px solid orange;
+    display: flex;
+}
+.main-document-header-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.main-document-header-container > div#title {
+    margin: 0 2.5%;
+}
+.main-document-header-container > div#main-img-icon {
+    min-width: 175px;
+}
+.main-document-header-container > #explain {
+    padding: 0 1rem;
+}
+div.article-actions-container {
+    margin: 6px 0 2px 0;
+    padding-left: 1rem;
+    border-bottom: 2px solid orange;
+}
+
+div.article-actions-container > .btn {
+    background-color: white;
+    border: none;
+    margin-bottom: 2px;
+}
+#main-wrapper {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#sidebar-links {
+    border: 1px solid black;
+    align-self: start;
+    padding: 0 1rem;
+/* I Can Not get Scrolling to Work!!
+    overflow-x: auto;
+    overflow-y: scroll; */
+    height: 90%;
+  
+}
+#main-content {
+    width: 75%;
+}
+#main-content > h2 {
+    text-align: center;
+}
+#main-content > h2 {
+    text-align: center;
+}
+#main-content > iframe {
+    width: 100%;
+    height: 100vh
+}
+.hide {
+    display: none
+}
