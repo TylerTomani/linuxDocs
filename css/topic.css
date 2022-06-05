@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    margin: .5%;
+}
+body > main > p {
+    margin: .5% 0 .75% 0;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 49%;
+    gap: 1%;
+}
+.flex-item {
+    /* width: 50%; */
+    border: 1px solid black;
+}
+.flex-container > .image{
+    width: 100%;
+    min-width: 400px; 
+    max-width: 550px;
+    /* margin: 1% 0 1% 0; */
+}
+.flex-container > .flex-item.image > a > img {
+    width: 100%;
+    min-width: 400px; 
+    max-width: 550px;
+    /* margin: 1% 0 1% 0; */
+}
+
+@media screen and (max-width:1300px) {
+    .flex-container > .flex-item.image {
+        width: 50%;
+        min-width: 400px; 
+        max-width: 550px;
+        /* margin: 1% 0 1% 0; */
+    }   
+}

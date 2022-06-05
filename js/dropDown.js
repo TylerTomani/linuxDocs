@@ -4,6 +4,8 @@ const mainExplain = document.querySelector("#main-content > #page-explain")
 const iframe = document.querySelector("#main-content > iframe")
 let toggle = false;
 
+const currentTopic = document.getElementById("currentTopic")
+
 artBtn.addEventListener("click",e => {
     console.log(e.target);
 })
@@ -41,3 +43,10 @@ topics.forEach(topic => {
     })
 })
 
+addEventListener("load",e => {
+    console.log(currentTopic)
+    let selectPage = currentTopic.nextElementSibling.getAttribute("href")
+    console.log(selectPage)
+    mainExplain.classList.add("hide")
+    iframe.src=selectPage
+})
