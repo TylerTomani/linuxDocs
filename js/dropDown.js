@@ -13,6 +13,8 @@ topics.forEach(topic => {
     topic.addEventListener("click", e => {
         e.preventDefault();
         // I need to get better at tranversing up the DOM tree
+        e.target.setAttribute("tabindex","1")
+        e.target.focus()
         let parent = e.target.parentElement.parentElement.parentElement
         let parentText = parent.querySelector("h2").innerText
         let pageLink = e.target.nextElementSibling
@@ -25,6 +27,8 @@ topics.forEach(topic => {
             mainExplain.classList.add("hide")
             iframe.src = href
             artBtn.innerHTML = parentText + " > " + topicText
+            iframe.setAttribute("tabindex","1")
+            iframe.focus()
         }
         //  else {
         //     mainExplain.classList.remove("hide")
