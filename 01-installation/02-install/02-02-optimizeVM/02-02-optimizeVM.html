@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-02-optimizeVM</title>
+    <link rel="stylesheet" href="../../../css/topic.css">
+</head>
+<body>
+    <h2>Optimizing you Virtual Machine</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                Before installing, optimize the vm. Make sure the VM is highlighted and click on 
+                <br>  the <q>Setting</q> icon
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/settings.png"><img  src="images/settings.png" alt=""></a>
+            
+        </div>
+    </div>
+    <h3>System</h3>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                Click on the <q>System</q> tab , and ensure the <q>Enable I/O APIC</q> option 
+                <br> is checked
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/systemIO.png"><img  src="images/systemIO.png" alt=""></a>
+            
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>&emsp;Then choose the <q>Processor</q> tab. Choose 2 <q>Processor(s)</q>, one 
+                <br> for the host and one for the VM. If you have more than two, you can 
+                <br> choose more. If you don't, the bottom  will show a text displaying
+                 <br> <q>Invalid settings detected</q>
+            </p>
+            <p>&emsp;Make sure <q>Enable PAE/NX</q> is checked. This allows 32bit 
+                <br> machines to access more than 4GB's of RAM    
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/processor.png"><img  src="images/processor.png" alt=""></a>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                Go to the <q>Acceleration</q> tab. If on MAC, keep default <br>
+                <q>Hyper-V</q> is best for Windows.
+                <br><q>KVM</q> is best for Linux
+            </p>
+            <p>Make sure <q>Enable Nested Paging</q> is checked</p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/acceleration.png"><img  src="images/acceleration.png" alt=""></a>
+        </div>
+    </div>
+    <h3>Display</h3>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;Now click on display and increase <q>Video Memory</q>
+                <br> to the max, and check <q>Enable 3D Acceleration</q>.
+                <br> let Virtual Box choose the <q>Graphics Controller</q>
+                <br>&emsp; The VM is now ready for installation
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/display.png"><img  src="images/display.png" alt=""></a>
+            
+        </div>
+    
+    </div>
+    <h3>Storage</h3>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;Select the storage icon to see the drives. To add another drive, 
+                <br>click on the <q>Controller: SATA icon</q> and then the plus icon <br>
+                on the bottom right
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/storage.png"><img  src="images/storage.png" alt=""></a>
+            
+        </div>
+    
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;You can also add hard drive controllers by clicking the left plus icon
+            </p>
+            <a tabindex="2" target="_blank"  href="images/addController.png"><img  src="images/addController.png" alt=""></a>
+            
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;To access the VM from another computer, go to the network icon 
+                <br>and change the <q>Attached to</q> Setting to <q>Bridged Adapter</q>. 
+                <q>NAT</q> will allow your VM to see other computers on the network, but
+                <br>others can access this VM without <q>Bridged Adapater.</q>
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/enableNetwork.png"><img  src="images/enableNetwork.png" alt=""></a>
+            
+        </div>
+    
+    </div>
+    <h3>Extension</h3>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;The following isn't neccessary but since the extension 
+                <br> is installed, we can choose to encrypt the vm. Go to the 
+                <br>Go to <q>General</q> &rarr; <q>Disk Encryption</q> to select 
+                <br>this option
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/encrypt.png"><img  src="images/encrypt.png" alt=""></a>
+            
+        </div>
+    
+    </div>
+    
+</body>
+</html>

@@ -57,6 +57,7 @@ topics.forEach(topic => {
 
         
         if(subUl.classList.contains("hide")){
+            hideTopics();
             subUl.classList.remove("hide")
         } else {
             subUl.classList.add("hide")

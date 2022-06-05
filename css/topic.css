@@ -2,6 +2,10 @@
     box-sizing: border-box;
     margin: 0;
 }
+img {
+    border: 1px solid black;
+    width: 450px;
+}
 body {
     margin: .5%;
 }
@@ -12,51 +16,57 @@ body > main > p {
     display: flex;
     flex-wrap: wrap;
     flex: 0 1 49%;
-    /* gap: .5%; */
+    gap: .5%;
 }
 .flex-container > div {    
     margin-bottom: 1.5%;
 }
-.txt {
-    /* display: flex; */
+.flex-item {
+    display: flex;
     padding: 1%;
     flex-direction: column;
     justify-content: center;
 
 }
-.txt > p {
+.flex-item > p {
     margin-bottom: 2.5%;
 }
-.txt  p > ul {
+.flex-item  p > ul {
     margin: 1% 0;
 }
-.txt ul > li {
+.flex-item ul > li {
     margin-bottom: 1%;
 }
-.txt ul > li > ul {
+.flex-item ul > li > ul {
     margin: 1% 0;
 }
-.txt ul > li > ul > li{
+.flex-item ul > li > ul > li{
     list-style-type: square;
 }
-.txt > a > img{
+
+
+/* Images */
+
+.flex-item > a > img{
     margin-top: 1.25%;
-    width: 40%;
+    width: 100%;
     min-width: 400px; 
     max-width: 550px;
 }
-/* Images */
-.flex-container > .image{
+.flex-container > .flex-item > .img,.flex-container > .flex-item > video{
+    margin-top: 2.5%;
     width: 100%;
     min-width: 400px; 
+    max-width: 550px;
+}
+.flex-container > .flex-item > .sm-img{
+    margin-top: 2.5%;
+    min-width: 400px; 
+    width: 250px;
     max-width: 550px;
 }
 
-.flex-container > .image > a > img {
-    width: 100%;
-    min-width: 400px; 
-    max-width: 550px;
-}
+
 
 
 @media screen and (max-width:1300px) {
