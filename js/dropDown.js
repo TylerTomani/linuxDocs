@@ -6,47 +6,81 @@ let toggle = false;
 
 const currentTopic = document.getElementById("currentTopic")
 
-artBtn.addEventListener("click",e => {
-    console.log(e.target);
-})
+function hideTopics() {
+    topics.forEach(topic => {
+        let parent = topic.parentElement
+        let subTopic = parent.querySelector("ul")
+        if(!subTopic.classList.contains("hide")){
+            subTopic.classList.add("hide")
+        }
+    })
+}
+hideTopics()
 
 topics.forEach(topic => {
     
     topic.addEventListener("click", e => {
         e.preventDefault();
         // I need to get better at tranversing up the DOM tree
-        e.target.setAttribute("tabindex","1")
-        e.target.focus()
-        let parent = e.target.parentElement.parentElement.parentElement
-        let parentText = parent.querySelector("h2").innerText
-        let pageLink = e.target.nextElementSibling
-        let href = pageLink.getAttribute("href")
-        let topicText = e.target.innerText;
-        console.log(parentText)
-        console.log(topicText)
+        
+        let grandParent = e.target.parentElement.parentElement.parentElement
+        let gpText = grandParent.querySelector("h2").innerText
+        
 
-        if(!toggle){
-            mainExplain.classList.add("hide")
-            iframe.src = href
-            artBtn.innerHTML = parentText + " > " + topicText
-            iframe.setAttribute("tabindex","1")
-            iframe.focus()
+        let parent = e.target.parentElement
+        let subUl = parent.querySelector("ul")
+        console.log(subUl)
+
+        let topicText = e.target.innerText;
+        console.log(topicText)
+        let subTopicTxt = ""
+        let href = ""
+
+        
+        if(subUl.classList.contains("hide")){
+            subUl.classList.remove("hide")
+        } else {
+            subUl.classList.add("hide")
         }
-        //  else {
-        //     mainExplain.classList.remove("hide")
-        //     iframe.src = ""
-        // }
-        // toggle = !toggle;
+
+        artBtn.innerHTML = gpText + " > " + topicText + " > " 
+
+        let subTopics = subUl.querySelectorAll("li")
+        subTopics.forEach(subtopic => {
+            subtopic.addEventListener("click",e => {
+                e.preventDefault();
+                let pageAnchor = e.target.nextElementSibling
+                href = pageAnchor.getAttribute("href")
+                console.log(href)
+                
+                subTopicTxt = e.target.innerText
+                console.log(subTopicTxt)
+       
+                if(!toggle){
+                    mainExplain.classList.add("hide")
+                    iframe.src = href
+                    artBtn.innerHTML = gpText + " > " + topicText + " > " + subTopicTxt
+                    iframe.setAttribute("tabindex","1")
+                    iframe.focus()
+                } 
+
+              
+            })
+        })
+       
+
+    
+
         
         
 
     })
 })
 
-addEventListener("load",e => {
-    console.log(currentTopic)
-    let selectPage = currentTopic.nextElementSibling.getAttribute("href")
-    console.log(selectPage)
-    mainExplain.classList.add("hide")
-    iframe.src=selectPage
-})
+// addEventListener("load",e => {
+
+//     let selectPage = currentTopic.nextElementSibling.getAttribute("href")
+
+//     mainExplain.classList.add("hide")
+//     iframe.src=selectPage
+// })
