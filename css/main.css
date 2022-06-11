@@ -48,14 +48,29 @@ div.article-actions-container > .btn {
 #sidebar-links {
     border: 1px solid black;
     align-self: start;
-    padding: 0 1rem;
+    padding: 0 .5rem;
 /* I Can Not get Scrolling to Work!!
     overflow-x: auto;
     overflow-y: scroll; */
     overflow-y: scroll; 
-    height: 90%;
-  
+    height: 90%; 
+    /* float: left; */
+    /* display: flex; */
+
 }
+.sidebar-container > .doc-topic > ul > li{
+    margin-left: -1rem;
+    list-style-type: square;
+}
+.sidebar-container > .doc-topic  ul  li > ul{
+    margin-left: -.75rem;
+    list-style: disc;
+}
+.sidebar-container > .doc-topic  ul  li > ul > li{
+    margin-left: -.75rem;
+    list-style: disc;
+}
+
 #main-content {
     width: 90%;
 }

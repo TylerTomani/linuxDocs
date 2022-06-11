@@ -9,5 +9,89 @@
 </head>
 <body>
     <h1>Update System Software</h1>
+    <p>Important note, linux does not need to reboot unless the kernal needs to updated</p>
+    <p class="important">Anything borded in red means it doesn't look like what he did in the tutoiral,
+        but seems correct
+    </p>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;The dvd install might be months old so it's important to 
+                <br>update your software. 
+                &emsp;Networking needs to be turned on to do any updating.
+                <br>Click the icon in the top right corner, under <q>Wired off</q>
+                <br>select <q>connect</q>
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/wired.png"><img  src="images/wired.png" alt=""></a>
+        </div>
+    </div>
+    <div class="flex-container br">
+        <div class="flex-item">
+            <p>
+                &emsp;Then go to <q>Applications</q>&rarr;<q>System Tools</q>&rarr;<q>Software</q>
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/software.png"><img  src="images/software.png" alt=""></a>
+        </div>
+    </div>
+    <div class="flex-container br   ">
+        <div class="flex-item">
+            <p>
+                &emsp;Click on the <q>Software</q> tab and select <q>Check for Update</q>
+                <br>He mentions hitting the refresh tab because this isn't always correct.
+
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/checkUpdates.png"><img  src="images/checkUpdates.png" alt=""></a>
+        </div>
+    </div>
+    <h2>Use command line for updates (CentOS 7 dnf)</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;It's better to use the command line when checking for updates because
+                <br>it is more accurate and Up to Date. Go to <q>Applications</q>&rarr;<q>System tools</q> 
+                <br>and  drag the <q>Terminal </q> application to your desktop and open it.
+            </p>
+            <p>
+                &emsp;Type in: <br>
+            </p>
+            <code>sudo dnf update</code>
+            <p>
+                if the command is not found type if running CentOS 7
+            </p>
+            <code>sudo yum makecache</code>
+            <code>sudo yum -y install dnf</code>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/terminal.png"><img  src="images/terminal.png" alt=""></a>
+            
+        </div>
+        
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;Hit yes for all options for dnf update, 
+                <br>Once done, reboot by clicking the power button in the top right
+                <br> corner of the window
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/reboot.png"><img  src="images/reboot.png" alt=""></a>
+            
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/rebootRestart.png"><img  src="images/rebootRestart.png" alt=""></a>
+            
+        </div>
+        
+        
+    </div>
 </body>
+
 </html>
