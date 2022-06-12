@@ -5,9 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>03-02-installGuestAdditions</title>
+    <link rel="stylesheet" href="../../../css/topic.css">
 </head>
 <body>
     <h1>03-02-installGuestAdditions</h1>
+    <h2>Guest Addition Prerequisites</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <ul>
+                <li>Guest OS has to be up to date</li>
+                <li>After update the OS has to rebooted to use
+                    <br>latest kernal from OS Update
+                    <br>(Restoring to previous snap shot does not accomplish this)
+                </li>
+                <li>Networking needs to be turned on to install software</li>
+                <li>The user needs to be the Administrator</li>
+            </ul>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/wired.png"><img  src="images/wired.png" alt=""></a>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;To update guest additions open the termainl and enter
+            </p>
+            <code>sudo dnf update -y</code>
+            <p>
+                &emsp;The dnf command handles software installations from the repository
+                it has replaced the yum command.
+                <br>The <code>-y </code> option answers all questions to yes
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/dnfUpdate-y.png"><img  src="images/dnfUpdate-y.png" alt=""></a>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;When done type in:
+            </p>
+            <code>sudo reboot</code>
+            <p>And hit enter</p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/sudoReboot.png"><img  src="images/sudoReboot.png" alt=""></a>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;After reboot, log back and ensure the network is on
+            </p>
+            <a tabindex="2" target="_blank"  href="images/wired copy.png"><img  src="images/wired copy.png" alt=""></a>
+        </div>
+        <div class="flex-item">
+            <p>
+                &emsp;Open the terminal and type the command:
+            </p>
+            <code>sudo dnf group install -y "Development tools"</code>
+            <a tabindex="2" target="_blank"  href="images/dnfGroupDev.png"><img  src="images/dnfGroupDev.png" alt=""></a>
+        </div> 
+        <div class="flex-container">
+            <div class="flex-item">
+                <p>
+                    &emsp;After this package is installed, install one more by typing:
+                </p>
+                <code>sudo dnf install -y elfutils-libelf-devel </code>
+            </div>
+            <div class="flex-item">
+                <a tabindex="2" target="_blank"  href="images/elfUtil.png"><img  src="images/elfUtil.png" alt=""></a>
+                
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">
+                <p>
+                    &emsp;After this you have to insert the <q>virtual guess edition cd</q>.
+                    <br>To do this go to the <q>Devices</q> tab 
+                    <br>This will take a few minutes because it has to compile a new 
+                    <br>kernal module
+                </p>
+            </div>
+            <div class="flex-item">
+                <a tabindex="2" target="_blank"  href="images/insertGuestAdd.png"><img  src="images/insertGuestAdd.png" alt=""></a>
+                
+            </div>
+            
+        </div>
+    </div>
     
 </body>
 </html>
