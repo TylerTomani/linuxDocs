@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03-03-configureSysSettings</title>
+    <link rel="stylesheet" href="../../../css/topic.css">
+</head>
+<body>
+    <h1>03-03-configureSysSettings</h1>
+    <p>
+        &emsp;After guest installations are complete, now would be a good 
+        <br>time to,
+    </p>
+    <ul>
+        <li>set a host name</li>
+        <li>set date and time</li>
+        <li>change language</li>
+        <li>edit shortcuts</li>
+    </ul>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;Set the network to <q>auto connect</q>, Go to the main
+                <q>Settings</q>&rarr;<q>Network</q>
+            </p>
+        </div>
+        <div class="flex-item">
+            <img tabindex="2" src="images/1-settings-network.png" alt="">
+            
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;Under <q>Wired</q> make sure connection is turned on
+            </p>
+        </div>
+        <div class="flex-item">
+            <img tabindex="2" src="images/2-wired.png" alt="">
+            
+        </div>
+        
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;To turn on <q>auto connect</q>click the gear icon 
+                <br>and select <q>auto automatically</q>, Then click Apply
+            </p>
+        </div>
+        <div class="flex-item">
+            <img tabindex="2" src="images/3-connectAuto.png" alt="">
+            
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;Change the <q>host name</q> by clicking on 
+                the <q>details</q> tab at the bottom left
+            </p>
+            <img tabindex="2" src="images/4-details.png" alt="">
+            <p>
+                &emsp;There you can change the host name
+            </p>
+        </div>
+        <div class="flex-item">
+            <img tabindex="2" src="images/5-hostname.png" alt="">
+            
+        </div>
+    </div>
+    <div class="flex-container">
+            <p>
+                &emsp;While stil in <q>details</q> you can change time,
+            </p>
+
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;There is one lower level configuration setting you might 
+                <br>want to change at this time.
+                <br>&emsp;Open the terminal and type in the command
+            </p>
+            <code>gedit admin:///etc/gdm/custom.conf</code>
+            
+        </div>
+        <div class="flex-item">
+            <img tabindex="2" src="images/6-gedit.png" alt="">
+            
+        </div>
+        
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;This is the file that configures the dispay server,
+                <br>After typing the command, enter your password, this will Open
+                <br>up the file, uncomment the line with <q>WaylandEnable=false</q>
+                <br>&emsp;Click save, then reboot, after reboot create a new snap shot
+            </p>
+        </div>
+        <div class="flex-item">
+            <img tabindex="2" src="images/7-wayland.png" alt="">
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>
