@@ -2,6 +2,21 @@
     box-sizing: border-box;
     margin: 0;
 }
+.problems-container {
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 1rem;
+}
+.problems-container > a {
+    padding: 1.01rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    color: tomato
+}
 
 .main-document-header-container > #main-header-right {
     display: flex;
@@ -83,7 +98,8 @@ div.article-actions-container > .btn {
 #main-content > iframe {
     margin-left: .25%;
     width: 100%;
-    height: 100vh
+    height: 100vh;
+    /* overflow: auto; */
 }
 .hide {
     display: none

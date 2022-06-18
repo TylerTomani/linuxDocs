@@ -78,7 +78,34 @@ body > main > p {
 .important {
     color:red;
 }
-
+.problemH2 {
+    margin: 1rem 0;
+    
+}
+.problemH2 > a {
+    border: 1px solid black;
+    font-size: 1.1rem;
+    color:tomato;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.problem > p {
+    text-align: center;
+    color:tomato;
+    padding: 1rem;
+    background-color: whitesmoke;
+    font-size: 1.4rem;
+}
+.problems  {
+    padding: 1.01rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    color: tomato
+}
 @media screen and (max-width:1300px) {
     .flex-container > .flex-item.image {
         width: 50%;

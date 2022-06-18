@@ -7,6 +7,8 @@
     <title>linuxDocumentation</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/dropDown.js" defer></script>
+    <script src="js/images.js" defer></script>
+    <script src="js/problems.js" defer></script>
 </head>
 <body>
     <div class="main-document-header-container">
@@ -26,7 +28,18 @@
                 </p>
             </div>
         </div>
-        
+
+    </div>
+    
+    <div class="problems-container">
+        <div class="links">
+
+        </div>
+        <a tabindex="1" href="#" id="problemOne">Problem #1</a>
+        <div class="explain">
+            <h2>PLEASE HELP ME,</h2>
+        <p>Click the Problem then the links that appear below</p>
+        </div>
     </div>
     <div class="article-actions-container">
         <button tabindex="-1" class="btn">Documentation</button>
@@ -51,7 +64,8 @@
                                 <li><a tabindex="1"  href="#">Create a VM</a><a href="01-installation/02-install/02-01-createVM/02-01-createVM.html"></a></li>
                                 <li><a tabindex="1"  href="#">Optimizing VM</a><a href="01-installation/02-install/02-02-optimizeVM/02-02-optimizeVM.html"></a></li>
                                 <li><a tabindex="1" href="#">Before Installing</a><a href="01-installation/02-install/02-03-beforeInstall/02-03-beforeInstall.html"></a></li>
-                                <li><a tabindex="1" href="#">Install from DVD</a><a href="01-installation/02-install/02-04-installDVD/02-04-installDVD.html"></a></li>
+                                <li><a tabindex="1" href="#">Install from DVD</a><a id="problemOneLink" href="01-installation/02-install/02-04-installDVD/02-04-installDVD.html"></a></li>
+                                <li><a id="currentTopic" tabindex="1" href="#">Install from Network</a><a href="01-installation/02-install/02-04b-installFromNetwork/02-04b-installFromNetwork.html"></a></li>
                                 <li><a tabindex="1" href="#">Virtual Machine Snap Shots</a><a href="01-installation/02-install/02-05-vmSnapshot/02-05-vmSnapshot.html"></a></li>
                             </ul>
                         </li>
@@ -61,7 +75,7 @@
                             <ul>
                                 <li><a tabindex="1" href="#" >Update Sys software</a><a href="01-installation/03-configureLinux/03-01-updateSysSoftware/03-01-updateSysSoftware.html"></a></li>
                                 <li><a tabindex="1" href="#" >Install Guess Additions in Linux</a><a href="01-installation/03-configureLinux/03-02-installGuestAdditions/03-02-installGuestAdditions.html"></a></li>
-                                <li><a id="currentTopic"  tabindex="1" href="#" >Install Guess Additions in Linux</a><a href="01-installation/03-configureLinux/03-03-configureSysSettings/03-03-configureSysSettings.html"></a></li>
+                                <li><a   tabindex="1" href="#" >Install Guess Additions in Linux</a><a href="01-installation/03-configureLinux/03-03-configureSysSettings/03-03-configureSysSettings.html"></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -101,8 +115,8 @@
         </div>
         <main id="main-content">
             <div id="page-explain">
-                <h2>Place holder text</h2>
-                <p>Explain the page and why and stuff</p>
+                <h2>PLEASE HELP ME,</h2>
+                <p>Click the Problem then link that appears at the top of this sections</p>
             </div>
             <!-- fix this inner scrolling issue -->
             <!-- <iframe scrolling="no" src="" frameborder="0"></iframe> -->
