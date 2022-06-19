@@ -96,3 +96,8 @@ prob3Btn.addEventListener("click", e => {
 
 
 
+const animates = document.querySelectorAll(".animate");
+
+animates.forEach(el => {
+    console.log(el.target)
+})
