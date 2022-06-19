@@ -9,27 +9,49 @@ img {
 body {
     margin: .5%;
 }
+.black {
+    color:black;
+}
 body > main > p {
     margin: .5% 0 1% 0;
 }
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    flex: 0 1 49%;
-    gap: .5%;
+    flex: 1 0 49%;
+    gap: .5% .05%;
+    border: 1px solid black;
+    margin-bottom: 1%;
+    position: relative;
 }
-.flex-container > div {    
-    margin-bottom: 1.5%;
-}
+
+.flex-item > .flex-item,
 .flex-item {
+    /* width: 40%; */
+    flex-basis: 49%;
+    /* border: dashed 1px blue; */
     display: flex;
     padding: 1%;
     flex-direction: column;
     justify-content: center;
 
 }
+.flex-item > h3 {
+    position: absolute;
+    font-size: 1.5rem;
+    /* margin: .5rem; */
+    margin-left: .5rem;
+    top: 0;
+    left:0;
+}
+
 .flex-item > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 2.5%;
+    border:1px solid black;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 1rem;
 }
 .flex-item  p > ul {
     margin: 1% 0;
@@ -59,12 +81,6 @@ body > main > p {
     min-width: 400px; 
     max-width: 550px;
 }
-.flex-container > .flex-item > .sm-img{
-    margin-top: 2.5%;
-    min-width: 400px; 
-    width: 250px;
-    max-width: 550px;
-}
 .flex-item > code {
     padding: 1%;
     border: 1px solid black;
@@ -78,12 +94,72 @@ body > main > p {
 .important {
     color:red;
 }
+.problemH2 {
+    margin: .5rem 0 .5rem 1rem;
+}
+.h2Ani{
+    transform: scale(1.2);
+}
+.problemA {
+    border: 1px solid black;
+    font-size: 1.1rem;
+    color:tomato;
+    padding: .5rem;
+    margin: 0 .5rem;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+.problem-item {
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.problem  {
+    text-align: center;
+    color:tomato;
+    padding: 1rem;
+    background-color: whitesmoke;
+    font-size: 1.2rem;
+}
+.problems  {
+    padding: 1.01rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 20px;
+    color: tomato
+}
 
-@media screen and (max-width:1300px) {
+.undero {
+    border-bottom: 3px solid orange;
+}
+
+
+@media screen and (max-width:1104px) {
+    .flex-container > .flex-item:first-of-type {
+        /* width: 100%;
+        background-color: darkmagenta; */
+    }
+    .flex-container  {
+        flex: 1 0 100%;
+    }
+    .flex-item {
+        flex-basis: 100%;
+    }
     .flex-container > .flex-item.image {
         width: 50%;
         min-width: 400px; 
-        max-width: 550px;
-        /* margin: 1% 0 1% 0; */
+        max-width: 550px; 
+        /* margin: 1% 0 1% 0;*/
     }   
+    .flex-item > h3 {
+        position: relative;
+        font-size: 1.5rem;
+    }
+    .flex-item > p {
+        margin-top: 2.5%;
+        padding-top: .5rem;
+        
+    }
 }

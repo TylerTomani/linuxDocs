@@ -10,272 +10,389 @@
 <body>
     <h2>Install from DVD</h2>
     <div class="flex-container">
+        <div class="problem-item">
+        <a class="problemA" id="prob2Btn" tabindex="1" href="#prob2">click here to get to Problem #2</a>
+        <a class="problemA" id="prob3Btn"tabindex="1" href="#prob3">click here to get to Problem #3</a>
+        </div>
+    </div>
+
+    <div class="flex-container">
         <div class="flex-item">
+            <h3>1.</h3>
             <p>
                 &emsp; To install from the DVD, we need to download an ISO image. 
-                <br>go to <a tabindex="2" href="https://www.centos.org/download/">https://www.centos.org/download/</a>
+                <br>go to <a tabindex="2" target="_blank" href="https://www.centos.org/download/">www.centos.org/download/</a>
                 <br> and select x86_64
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/1-x86.png"><img  src="images/1-x86.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/01-1-1-x86.png"><img  src="images/01-1-1-x86.png" alt=""></a>
         </div>
     </div>
+    
     <div class="flex-container">
         <div class="flex-item">
+            <h3>2.</h3>
             <p>
                 &emsp;Ideally you want to choose a mirror close to you, but <br>
                 you can select any if you don't know where they are.
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/mirror.png"><img  src="images/mirror.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/02-mirror.png"><img  src="images/02-mirror.png" alt=""></a>
         </div>
     </div>
-    <div class="flex-container">
+    <div class="flex-container  br" id="prob2">
         <div class="flex-item">
+            <h3 class="important">3. Problem 2</h3>
             <p>
                 &emsp;Click the <q>CentOS-7-x86_64-DVD-2009.iso</q> link to download.
             </p>
+            
+            <p style="color:red;">
+                There is no option for anything 2011 anywhere, so I chose Downloaded and tried both
+                <br><q>64-DVD-2009.iso</q> and <q>64-Everything-2009.iso</q> Is this a the problem??
+                Which should I choose??
+            </p>
+            <p>
+                <span class="important"><a style="color:red" href="#prob3">Click here</a> for Problem #3</span>
+            </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/download.png"><img  src="images/download.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/03-download.png"><img  src="images/03-download.png" alt=""></a>
             
         </div>
     </div>
+
     <div class="flex-container">
         <div class="flex-item">
+            <h3>4.</h3>
             <p>
-                &emsp;Once iso image has downloaded go to Virtual Box and your VM, then 
+                &emsp;Once the iso image has downloaded, go to the VM in Virtual Box. 
                 <br>click the <q>Start Icon</q>
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/vmStart.png"><img  src="images/vmStart.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/04-vmStart.png"><img  src="images/04-vmStart.png" alt=""></a>
         </div>
     </div>
+
     <h3>Error</h3>
     <div class="flex-container">
         <div class="flex-item">
-            <p>If you are running Virtual Box for the first time, you will probably encounter 
-                <br> this error, go to your Mac <q>System Prefrences</q> &rarr; <q>Security and Privacy</q>
-                <br> an allow Oracle access. You will have to restart after.
+            <h3>5.</h3>
+            <p>
+                &emsp;If you are running Virtual Box for the first time, you will probably encounter 
+                this error, go to your Mac
+                <br> <q>System Prefrences</q> &rarr; <q>Security and Privacy</q>
+                <br> and allow Oracle access. You will have to restart after.
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/error.png"><img  src="images/error.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/05-error.png"><img  src="images/05-error.png" alt=""></a>
             
         </div>
     </div>
     <div class="flex-container">
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/sysPref.png"><img  src="images/sysPref.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/05-b-sysPref.png"><img  src="images/05-b-sysPref.png" alt=""></a>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/restart.png"><img  src="images/restart.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/05-c-restart.png"><img  src="images/05-c-restart.png" alt=""></a>
         </div>
     </div>
+
     <div class="flex-container">
         <div class="flex-item">
+            <h3>6.</h3>
             <p>
                 &emsp;After restarting go back to your VM in Virtual Box, hit start again.
                 <br>This time is will say,
             </p>
-            <img tabindex="2" src="images/keystroke.png" alt="">
+            <a tabindex="2" href="_blank"> <img tabindex="2" src="images/06-keystroke.png" alt=""></a>
             <p>
                 &emsp;Go back to Sys Pref Security and Privacy, click on the <q>Privacy</q> tab 
                 <br> scroll down to the <q>Input Monitoring</q> and check <q>VirtualBox</q>.
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/sysPref2.png"><img  src="images/sysPref2.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/06-b-sysPref2.png"><img  src="images/06-b-sysPref2.png" alt=""></a>
         </div>
     </div>
+
     <div class="flex-container">
         <div class="flex-item">
+            <h3>7.</h3>
             <p>
                 &emsp;Now, go back to your VM in Virtual Box, and select start. Once in start,
-                <br>click the folder icon.
+                click the folder icon.
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/folderIcon.png"><img  src="images/folderIcon.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/07-folderIcon.png"><img  src="images/07-folderIcon.png" alt=""></a>
         </div>
     </div>
+
     <div class="flex-container">
         <div class="flex-item">
+            <h3>8.</h3>
             <p>
                 &emsp;Then click the <q>Add</q> Icon.
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/add.png"><img  src="images/add.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/08-add.png"><img  src="images/08-add.png" alt=""></a>
         </div>
     </div>
+
     <div class="flex-container">
         <div class="flex-item">
+            <h3>9.</h3>
             <p>
                 &emsp;Navigate to where you downloaded the iso and select it
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/addDownload.png"><img  src="images/addDownload.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/09-addDownload.png"><img  src="images/09-addDownload.png" alt=""></a>
         </div>
     </div>
+
     <div class="flex-container">
+        <h3>10.</h3>
         <div class="flex-item">
             <p>
                 &emsp;After clicking on the downloaded iso, click choose, then start.
             </p>
-            <div class="img">
-                <a tabindex="2" target="_blank"  href="images/choose.png"><img  src="images/choose.png" alt=""></a>
-                
-            </div>
+            
         </div>
-            <!-- <div class="flex-item">  WRONG IMAGE, get the start img
-                <a tabindex="2" target="_blank"  href="images/start.png"><img  src="images/choose.png" alt=""></a>
-                
-            </div> -->
+        <div class="img">
+            <a tabindex="2" target="_blank"  href="images/10-choose.png"><img  src="images/10-choose.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/10-b-start.png"><img  src="images/10-b-start.png" alt=""></a>
+        </div>
+            
     </div>
+
     <hr>
     <h3>Inside VM, host key</h3>
     <div class="flex-container">
         <div class="flex-item">
-            <p>
-                <span style="color: red">&emsp; THE MOUSE might NOT WORK. Hit the host key "command" to use it. </span>
-                <br>
-
-                &emsp;A window with black background will appear displaying:
+            <h3 tabindex="2">11</h3>
+            <div class="flex-item">
+                <p>
+                    <span style="color: red">&emsp; THE MOUSE might NOT WORK. Hit the host key "command" to use it. </span>
+                    
+                </p>
+            </div>
+            <div class="flex-item">
+                <p>
+                    &emsp;A window with black background will appear displaying:
+                </p>
                 <ul>
                     <li>Install CentOS Linux 8</li>
                     <li>Test this media & ..</li>
                 </ul>
-                <br>The <q>Test this media ...</q> option is for download from physical disc,
-                <br>NOT iso mirrors. SO, Choose <q>Install CentOS Linux 8</q>
-                
-            </p>
+            </div>
+            <div class="flex-item weird">
+                <p>
+                    &emsp;The <q>Test this media ...</q> option is for download from physical disc,
+                    <br>NOT iso mirrors. SO, Choose <q>Install CentOS Linux 8</q>  
+                </p>
+            </div>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/vmStartup.png"><img  src="images/vmStartup.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/11-vmStartup.png"><img  src="images/11-vmStartup.png" alt=""></a>
         </div>
     </div>
+
     <div class="flex-container">
         <div class="flex-item">
+            <h3>12.</h3>
             <p>
                 &emsp;After Install is complete, this page should show up, 
                 <br>If mouse isn't working properly, place pointer in all four 
-                <br>corners of the virtual box window. If you can't get the mouse
-                <br>to work just close/Power Off Machine  and hit start again. 
-                <br>Once working and installed  Click on continue
+                <br>corners of the virtual box window. 
+                <br>&emsp;If you can't get the mouseto work just close/Power Off Machine
+                and hit start again. 
+                <br>&emsp;Once working, Choose a Language, Click on continue
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/vmpage1.png"><img  src="images/vmpage1.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/12-vmpage1.png"><img  src="images/12-vmpage1.png" alt=""></a>
         </div>
     </div>
+
     <h3>Operating System Install</h3>
     <div class="flex-container">
         <div class="flex-item">
+            <h3>13.</h3>
             <p>
-                &emsp;Next the installation summary screen will appear, 
+                &emsp;The installation summary screen will appear.
                 <br>This is where you configure how the operting system will 
                 <br>be installed.
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/vmPage2.png"><img  src="images/vmPage2.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/13-vmPage2.png"><img  src="images/13-vmPage2.png" alt=""></a>
         </div>
     </div>
+
     <div class="flex-container">
         <div class="flex-item">
+            <h3>14.</h3>
             <p>
                 &emsp;First, choose time and date, <br>
                 You can also set up language and keyboard
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/timeDate.png"><img  src="images/timeDate.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/14-timeDate.png"><img  src="images/14-timeDate.png" alt=""></a>
             
         </div>
     </div>
+
     <div class="flex-container">
         <div class="flex-item">
+            <h3>15.</h3>
             <p>
                 &emsp;Click on software selection and click on workstation, 
-                <br> <span style="color:red">The tutorial says</span> <q>workstation</q> <span style="color:red"> but only 
-                <br></span><q>Development and Creative Workstation</q> <span style="color:red">
-                 is an option</span> <br> So choose that and see what happens. Hit done
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/workstation.png"><img  src="images/workstation.png" alt=""></a>
+            <div class="flex-item">
+                <a tabindex="2" target="_blank"  href="images/15-softwareSelect.png"><img  src="images/15-softwareSelect.png" alt=""></a>
+            </div>
         </div>
+        
     </div>
-    <div class="flex-container">
+    <div class="flex-container br " id="prob3">
         <div class="flex-item">
+            <h3>16. Problem 3</h3>
+       
+            <p>    
+                <br> <span style="color:red">The tutorial says choose, </span> 
+                <br>&emsp;<q>workstation</q> 
+                <br><span style="color:red"> but the only close alternative seems to be 
+                <br>&emsp;</span><q>Development and Creative Workstation</q> <span style="color:red"></span> 
+                <br>&emsp;</span><q>GNOME Desktop</q> <span style="color:red"></span> 
+                <br><br><span style="color:red;"> I know we download packages later via the terminal but is this messing things up??</span>
+                <br>I chose GNOME Desktop
+                 
+            </p>
             <p>
-                &emsp;Now choose the <q>Installation Destination</q>. Choose
-                <br>ATA VBOX HARDDISK,
-                <br>Under <q>Storage configuration, Automatic
-                    <br>sets up 3 partitions, Custom,
-                    Allows us to the partitions we've created, choose Custom
-                </q>
+                <p>
+                    <span class="important"><a style="color:red" href="#prob2">Click here</a> for Problem #2</span>
+                </p>
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/installationDestination.png"><img  src="images/installationDestination.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/16-a-Problem3.png"><img  src="images/16-a-Problem3.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/16-b-Problem3.png"><img  src="images/16-b-Problem3.png" alt=""></a>
         </div>
     </div>
+
     <div class="flex-container">
         <div class="flex-item">
+            <h3>17.</h3>
             <p>
-                &emsp;After clicking on "I will configure partitions", just click on 
+                &emsp;Now choose the <q>Installation Destination</q>. 
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/17-installDestination-a.png"><img  src="images/17-installDestination-a.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>18.</h3>
+            <p>
+                &emsp;Select,
+                <br>&emsp;&emsp;<q>ATA VBOX HARDDISK</q>
+                <br> under <q>Storage configuration</q>
+                <ul>
+                    <li><q>Automatically configure partitioning</q> - sets up 3 partitions</li>
+                    <li><q>I will configure partitioning</q> - Allows us to the partitions we've created, choose Custom</li>
+                </ul>
+                &emsp;Choose <q>I will configure partitioning</q>
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/18-installDestination-b.png"><img  src="images/18-installDestination-b.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>19.</h3>
+            <p>
+                &emsp;After clicking on "I will configure partitions", click on 
                 <br> <q>click to create them automatically</q> 
              
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/createAuto.png"><img  src="images/createAuto.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/19-createAuto.png"><img  src="images/19-createAuto.png" alt=""></a>
         </div>
     </div>
     <div class="flex-container">
         <div class="flex-item">
-            <br>This will open the <q>MANUAL PARTITIONING</q> window <br>
-            the /boot partition is where the linux kernal is stored
-            <br>/root is where the operating system is stored
-            <br>/swap is for virual memory
+            <h3>20.</h3>
+            <p>
+                <br>&emsp;This will open the <q>MANUAL PARTITIONING</q> window.
+                <br>the /boot partition is where the linux kernal is stored
+                <br>/root is where the operating system is stored
+                <br>/swap is for virual memory
+            </p>
         </div>
         
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/managePartioning.png"><img  src="images/managePartioning.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/20-managePartioning.png"><img  src="images/20-managePartioning.png" alt=""></a>
             
+        </div>
+    </div>
+
+    <h3>Set up root and user</h3>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>21.</h3>
+            <p>
+                &emsp;go to menu, once in menu, Hit <q>begin installation</q>. 
+            </p>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">
+                <a tabindex="2" target="_blank"  href="images/21-rootUser-a.png"><img  src="images/21-rootUser-a.png" alt=""></a>
+            </div>
         </div>
     </div>
     <div class="flex-container">
         <div class="flex-item">
+            <h3>22.</h3>
+            <p></p>
             <p>
-                &emsp;go to menu, once in menu, Hit <q>begin installation</q>. 
+                
                 <br>A new menu showing root password and user creation will appear.
-                <br>&emsp;NEVER LOG in as ROOT on linux, Always Create a USER. <br>
-                First, <br>
-                set up password for Root. NEVER LOG in AS ROOT, Then 
+                <br>&emsp;NEVER LOG in as ROOT on linux, Always Create a USER. 
+                <br>First, 
+                <br>set up password for Root. NEVER LOG in AS ROOT, 
+                <br> Then 
                 <br>create user. <br> 
             </p>
         </div>
             <div class="flex-item">
-                <a tabindex="2" target="_blank"  href="images/rootAndUser.png"><img  src="images/rootAndUser.png" alt=""></a>
-                
+                <a tabindex="2" target="_blank"  href="images/22-rootAndUser.png"><img  src="images/22-rootAndUser.png" alt=""></a>     
             </div>
     </div>
     <div class="flex-container">
         <div class="flex-item">
+            <h3>23. </h3>
             <p>
                 MAKE SURE to hit check box in user creation to set up user as 
                 <br>administator.
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/sysAdmin.png"><img  src="images/sysAdmin.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/23-sysAdmin.png"><img  src="images/23-sysAdmin.png" alt=""></a>
             
         </div>
         
@@ -283,17 +400,24 @@
     <div class="flex-container">
         <div class="flex-item">
             <p>
-                Begin Installation, after rebooting, click top option in black screen,
+                &emsp;Begin Installation. This will take a while...
+                <br>after it has rebooted, 
+                <br> click top option in black screen,
                 <br>agree to licence, log in as user, choose default option for keyboard
             </p>
         </div>
+        <div class="flex-item">
+            <p>
+                &emsp;Everything should be installed,
+                Do not forget to set up user and administator
+            </p>
+        </div>
+        
     </div>
-    <p>Everything should be installed, go back and take more screen shots, if you're confused,
-        Do not forget to set up user and administator
-    </p>
-    <p>Here is a screen shot of host key pop up </p>
-    <a tabindex="2" target="_blank"  href="images/Screen Shot 2022-06-05 at 1.44.22 PM.png"><img  src="images/Screen Shot 2022-06-05 at 1.44.22 PM.png" alt=""></a>
     
+    <!-- <p>Here is a screen shot of host key pop up </p>
+    <a tabindex="2" target="_blank"  href="images/Screen Shot 2022-06-05 at 1.44.22 PM.png"><img  src="images/Screen Shot 2022-06-05 at 1.44.22 PM.png" alt=""></a>
+     -->
 
 </body>
 </html>

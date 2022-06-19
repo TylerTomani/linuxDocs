@@ -11,34 +11,49 @@
     <h2>Optimizing you Virtual Machine</h2>
     <div class="flex-container">
         <div class="flex-item">
+            <h3>1.</h3>
             <p>
-                Before installing, optimize the vm. Make sure the VM is highlighted and click on 
-                <br>  the <q>Setting</q> icon
+                &emsp;Before installing, optimize the vm.
+                <br> Make sure the VM is highlighted 
+                 <br> and then click on the <q>Settings</q> icon
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/settings.png"><img  src="images/settings.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/1-settings.png"><img  src="images/1-settings.png" alt=""></a>
             
         </div>
     </div>
     <h3>System</h3>
     <div class="flex-container">
         <div class="flex-item">
+            <h3>2.</h3>
             <p>
                 Click on the <q>System</q> tab , and ensure the <q>Enable I/O APIC</q> option 
-                <br> is checked
+                 is checked
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/systemIO.png"><img  src="images/systemIO.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/2-systemIO.png"><img  src="images/2-systemIO.png" alt=""></a>
             
         </div>
     </div>
-    <div class="flex-container">
+    <div class="flex-container br">
         <div class="flex-item">
-            <p>&emsp;Then choose the <q>Processor</q> tab. Choose 2 <q>Processor(s)</q>, one 
-                <br> for the host and one for the VM. If you have more than two, you can 
-                <br> choose more. If you don't, the bottom  will show a text displaying
+            <h3>3.</h3>
+            <p>
+                &emsp;Then click the <q>Processor</q> tab.
+            </p>
+            <p>&emsp;If you have a multi-core host computer, you can select multiple CPUs.
+                <br>It is safe to select half of the available CPUs on your computer, To check 
+                <br>on a mac go to <q>About this mac</q>&rarr;<q>System Report</q><q> Total Number of Cores:</q>
+                <br> <span class="important">(I have 2 on my computer) should I choose 1 or two??</span>
+            </p>
+            <p> 
+                I Chose 2 <q>Processor(s)</q>
+            </p> 
+            <p>
+                
+                <br>&emsp; If you don't have enough CPUs, the bottom  will show a text displaying
                  <br> <q>Invalid settings detected</q>
             </p>
             <p>&emsp;Make sure <q>Enable PAE/NX</q> is checked. This allows 32bit 
@@ -46,34 +61,41 @@
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/processor.png"><img  src="images/processor.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/3-processor.png"><img  src="images/3-processor.png" alt=""></a>
         </div>
     </div>
     <div class="flex-container">
         <div class="flex-item">
+            <h3>4.</h3>
             <p>
-                Go to the <q>Acceleration</q> tab. If on MAC, keep default <br>
-                <q>Hyper-V</q> is best for Windows.
+                &emsp;Go to the <q>Acceleration</q> tab. If on MAC, keep default. 
+                <br>
+                <q>Hyper-V</q> for Windows.
                 <br><q>KVM</q> is best for Linux
             </p>
             <p>Make sure <q>Enable Nested Paging</q> is checked</p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/acceleration.png"><img  src="images/acceleration.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/4-acceleration.png"><img  src="images/4-acceleration.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/4-b-acceleration.png"><img  src="images/4-b-acceleration.png" alt=""></a>
         </div>
     </div>
     <h3>Display</h3>
     <div class="flex-container">
         <div class="flex-item">
+            <h3>5.</h3>
             <p>
                 &emsp;Now click on display and increase <q>Video Memory</q>
-                <br> to the max, and check <q>Enable 3D Acceleration</q>.
-                <br> let Virtual Box choose the <q>Graphics Controller</q>
+                <br> to the max, 
+            </p> 
+            <p>
+                &emsp;check <q>Enable 3D Acceleration</q>.
+                <br> let Virtual Box choose the <q class="undero">Graphics Controller</q>
                 <br>&emsp; The VM is now ready for installation
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/display.png"><img  src="images/display.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/5-display.png"><img  src="images/5-display.png" alt=""></a>
             
         </div>
     
@@ -108,7 +130,7 @@
                 &emsp;To access the VM from another computer, go to the network icon 
                 <br>and change the <q>Attached to</q> Setting to <q>Bridged Adapter</q>. 
                 <q>NAT</q> will allow your VM to see other computers on the network, but
-                <br>others can access this VM without <q>Bridged Adapater.</q>
+                <br>others can not access this VM without <q>Bridged Adapater.</q>
             </p>
         </div>
         <div class="flex-item">
