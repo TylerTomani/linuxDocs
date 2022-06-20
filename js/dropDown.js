@@ -6,7 +6,7 @@
     let toggle = false;
 
     const currentTopic = document.getElementById("currentTopic")
-    // // Delete Code Below When Not working on the project
+    // // // Delete Code Below When Not working on the project
     // addEventListener("load",e => {
 
     //     let selectPage = currentTopic.nextElementSibling.getAttribute("href")

@@ -12,10 +12,6 @@ images.forEach(img => {
 })
 
 
-
-
-
-
 function openImg(e){
     console.log(e.target)
         let image = e.target;

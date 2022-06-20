@@ -9,6 +9,7 @@
     <script src="js/dropDown.js" defer></script>
     <script src="js/images.js" defer></script>
     <script src="js/problems.js" defer></script>
+    
 </head>
 <body>
     <div class="main-document-header-container">
@@ -36,9 +37,13 @@
             <h2>PLEASE HELP ,</h2>
         <p>Click the Problem then the links that appear below</p>
         </div>
-        <a tabindex="1" href="#" id="problemOneBtn">Problem #1</a>
+        <!-- <a tabindex="1" href="#" id="problemOneBtn">Problem #1</a>
         <a tabindex="1" href="#" id="problemTwoBtn">Problem #2</a>
-        <a tabindex="1" href="#" id="problemThreeLink">Problem #3</a>
+        <a tabindex="1" href="#" id="problemThreeBtn">Problem #3</a>
+        <a tabindex="1" href="#" id="problemFourBtn">Problem #4 - yum install</a> -->
+        <!-- <a tabindex="1" href="#" id="problemFiveBtn">Problem #5 - wayland not found</a> -->
+        <!-- <a tabindex="1" href="#" id="problemSixBtn">Problem #6 - Gnome Firefox Extension</a> -->
+        <a tabindex="1" href="#" id="problemSevenBtn">Problem #7 - Dark table</a>
     </div>
 
     <div class="article-actions-container">
@@ -52,7 +57,7 @@
                 <div class="doc-topic">
                     <h2>Installation</h2>
                     <ul>
-                            <li><a tabindex="1" href="#" class="dropDown">Ch2-BeforeInstall </a>
+                            <li><a tabindex="1" href="#" class="dropDown">Ch1-BeforeInstall </a>
                             <ul>
                                 <li><a tabindex="1" href="#">download/install</a><a  href="01-installation/01-preInstall/01-01-downloadVM/01-01-downloadVM.html"></a></li>
                                 <li><a tabindex="1" href="#">manage Virtual Box GUI</a><a href="01-installation/01-preInstall/01-02-managelVmLinux/01-02-managelVmLinux.html"></a></li>
@@ -60,23 +65,36 @@
                         </li>
                     </ul>
                     <ul>
-                        <li><a tabindex="1" href="#" class="dropDown" id="ch3">Ch3-Install</a>
+                        <li><a tabindex="1" href="#" class="dropDown" id="ch3">Ch2-Install</a>
                             <ul>
                                 <li><a tabindex="1"  href="#">Create a VM</a><a id="problemOneLink" href="01-installation/02-install/02-01-createVM/02-01-createVM.html"></a></li>
                                 <li><a tabindex="1"  href="#">Optimizing VM</a><a href="01-installation/02-install/02-02-optimizeVM/02-02-optimizeVM.html"></a></li>
                                 <li><a tabindex="1" href="#">Before Installing</a><a href="01-installation/02-install/02-03-beforeInstall/02-03-beforeInstall.html"></a></li>
-                                <li><a id="currentTopic" tabindex="1" href="#">Install from DVD</a><a id="problemTwoLink" id="problemThreeLink" href="01-installation/02-install/02-04-installDVD/02-04-installDVD.html"></a></li>
+                                <li><a tabindex="1" href="#">Install from DVD</a><a id="problemTwoLink"  href="01-installation/02-install/02-04-installDVD/02-04-installDVD.html"></a></li>
                                 <li><a tabindex="1" href="#">Install from Network</a><a href="01-installation/02-install/02-04b-installFromNetwork/02-04b-installFromNetwork.html"></a></li>
                                 <li><a tabindex="1" href="#">Virtual Machine Snap Shots</a><a href="01-installation/02-install/02-05-vmSnapshot/02-05-vmSnapshot.html"></a></li>
                             </ul>
                         </li>
                     </ul>
                     <ul>
-                        <li><a tabindex="1" href="#" class="dropDown">Ch4-Configure Linux</a>
+                        <li><a tabindex="1" href="#" class="dropDown">Ch3-Configure Linux</a>
                             <ul>
-                                <li><a tabindex="1" href="#" >Update Sys software</a><a href="01-installation/03-configureLinux/03-01-updateSysSoftware/03-01-updateSysSoftware.html"></a></li>
+                                <li><a tabindex="1" href="#" >Update Sys software</a><a id="problemFourLink" href="01-installation/03-configureLinux/03-01-updateSysSoftware/03-01-updateSysSoftware.html"></a></li>
                                 <li><a tabindex="1" href="#" >Install Guess Additions in Linux</a><a href="01-installation/03-configureLinux/03-02-installGuestAdditions/03-02-installGuestAdditions.html"></a></li>
-                                <li><a   tabindex="1" href="#" >Install Guess Additions in Linux</a><a href="01-installation/03-configureLinux/03-03-configureSysSettings/03-03-configureSysSettings.html"></a></li>
+                                <li><a tabindex="1" href="#" >Configure basic system settings</a><a  id="problemFiveLink" href="01-installation/03-configureLinux/03-03-configureSysSettings/03-03-configureSysSettings.html"></a></li>
+                                <li><a tabindex="1" href="#" >Customize GNOME 3 desktop</a><a  href="01-installation/03-configureLinux/03-04-customGnomeDesktop/03-04-customGnomeDesktop.html"></a></li>
+                                <li><a tabindex="1" href="#" >Installing GNOME 3 extensions</a><a id="problemSixLink"href="01-installation/03-configureLinux/03-05-installGnomeExt/03-05-installGnomeExt.html"></a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a tabindex="1" href="#" class="dropDown">Ch4-Using Linux</a>
+                            <ul>
+                                <li><a tabindex="1" href="#" >Installing Software</a><a  href="01-installation/04-usingLinux/04-01-installSoftwareCentos/04-01-installSoftwareCentos.html"></a></li>
+                                <li><a id="currentTopic" tabindex="1" href="#" >Installing 3rdParty Software</a><a id="problemSevenLink" href="01-installation/04-usingLinux/04-02-install3partyRepos/04-02-install3partyRepos.html"></a></li>
+                                
+
                             </ul>
                         </li>
                     </ul>

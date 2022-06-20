@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-01-installSoftwareCentos</title>
+    <link rel="stylesheet" href="../../../css/topic.css">
+</head>
+<body>
+    <h2>04-01-Installing common software in CentOS 8 (really 7 here)</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;There are two ways of installing software from software repositories
+            </p>
+            <ul>
+                <li>The gui</li>
+                <li>The terminal</li>
+            </ul>
+        </div>
+    </div>
+    <h2>The GUI</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>1.</h3>
+            <p>
+                &emsp;Go to <q>Software</q> under <q>Applications</q>
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/01-software.png"><img  src="images/01-software.png" alt=""></a>
+        </div>    
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>2.</h3>
+            <p>
+                &emsp;Listed will be the software, and these are not the only softwares
+                <br>that you can install, only the recommended
+            </p>
+            <p>
+                &emsp;You must double click them, to open them. There are roughly 7000.
+                <br>Only a few are available through the GUI, for the rest you must use the 
+                <br>command line
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/02-softwaresGUI.png"><img  src="images/02-softwaresGUI.png" alt=""></a>
+            
+        </div>       
+    </div>
+
+    <h2>The Terminal</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>3.</h3>
+            <p>
+                &emsp;In the command line type,
+            </p>
+            <code>sudo dnf install -y gimp</code>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/03-gimp.png"><img  src="images/03-gimp.png" alt=""></a>
+            
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/03b-gimp.png"><img  src="images/03b-gimp.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>4.</h3>
+            <p>
+                &emsp;Once completed, type in gimp 
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/04-gimpCmd.png"><img  src="images/04-gimpCmd.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>5.</h3>
+            <p>
+                &emsp;Or select <q>GNU Image Manipulation Program</q> under <q>Graphic</q>
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/05-gimpGraphics.png"><img  src="images/05-gimpGraphics.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>6.</h3>
+            <p>
+                &emsp;Once gimp opens, select <q>Single window mode</q>
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/06-singleWindow.png"><img  src="images/06-singleWindow.png" alt=""></a>
+            
+        </div>
+        
+    </div>
+
+    <h2>Install Libra - a forklift of oracle open office</h2>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>7.</h3>
+            <p>
+                &emsp;For Libra, install a group of softwares because this saves time
+                <br> To do type in
+            </p>
+            <code>sudo dnf group install -y "Office suite and productivity"</code>
+            <p>
+                &emsp;To remove this or any software change install with remove
+            </p>
+            <code>sudo dnf group <span class="bv">remove</span> -y "Office suite and productivity"</code>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/07-groupInstall.png"><img  src="images/07-groupInstall.png" alt=""></a>
+            
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>8.</h3>
+            <p>
+                &emsp;They should now appear under <q>Applications</q> in 
+                <br><q>Office</q> and <q>Graphics</q>
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/08-Office.png"><img  src="images/08-Office.png" alt=""></a>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/08b-Graphics.png"><img  src="images/08b-Graphics.png" alt=""></a>
+        </div>
+    </div>
+    
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>9.</h3>
+            <p>
+                &emsp;To find more avalailable software type,
+            </p>
+            <code>sudo dnf list available</code>
+            <p>
+                &emsp;This will be a long list
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/09-available.png"><img  src="images/09-available.png" alt=""></a>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/09b-availableList.png"><img  src="images/09b-availableList.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>10.</h3>
+            <p>
+                &emsp;To see which softwares are installed type
+            </p>
+            <code>sudo dnf list installed</code>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/10-installed.png"><img  src="images/10-installed.png" alt=""></a>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/10b-installedList.png"><img  src="images/10b-installedList.png" alt=""></a>
+            
+        </div>
+        
+        
+    </div>
+ 
+</body>
+</html>

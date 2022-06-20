@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-02-install3partyRepos</title>
+    <link rel="stylesheet" href="../../../css/topic.css">
+</head>
+<body>
+    <h2>04-02-Install software from third-party repositories</h2>
+    <div class="flex-container">
+        <div class="problem-item">
+        <a class="problemA" id="prob7Btn" tabindex="1" href="#prob7">click here to get to Problem #7</a>
+        
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;The standard enterprise linux repositories contain alot of 
+                <br>server packages, but not alot of GUI programs. To add desktop GUIs,
+                <br>you need to add third-party software repositories.
+            </p>
+            <p>
+                &emsp;There are several ways of doing this
+            </p>
+        </div>
+        <div class="flex-item">
+            <p>
+                &emsp;The first way shown here adds the repository automatically.
+            </p>
+            <p>
+                &emsp;The second way, the repository will reside in a package that we will 
+                <br>install from the standara enterprise linux repo
+            </p>
+            <p>
+                &emsp;The last repo, we will download a RPM package from the internet 
+                <br> and manually install it
+            </p>
+        </div>      
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>1.</h3>
+            <p>
+                &emsp;First, download chrome in firefox
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/01-dloadChrome.png"><img  src="images/01-dloadChrome.png" alt=""></a>
+            
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>2.</h3>
+            <p>
+                &emsp;This should recognize that you are on linux,
+                <br>Notice the <q>will add the Google repository</q>, this makes
+                <br>future updates secure and easy.
+            </p>
+            <p>
+                &emsp;Make sure <q>64 bit .rpm (For fedora.. </q> is selected
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/02-linuxChromeRepo.png"><img  src="images/02-linuxChromeRepo.png" alt=""></a>
+            
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>3.</h3>
+            <p>
+                &emsp;When prompted save the package. By default enterprise linux will
+                save it in the downloads directory
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/03-save.png"><img  src="images/03-save.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>4.</h3>
+            <p>
+                &emsp;Install using the command line, type,
+            </p>
+            <code>cd ~/Downloads</code>
+            <code>sudo dnf install google-chrome*</code>
+            <p>
+                &emsp;use the <code>*</code> because it's a wildcard and will install any file
+                <br>that starts with google-chrome
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/04-installChrome.png"><img  src="images/04-installChrome.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>5.</h3>
+            <p>
+                &emsp;Once install is complete, check if it has been added to the software repository.
+                <br>type,
+            </p>
+            <code>sudo dnf repolist</code>
+            <p>
+                <strong>&emsp;Downloading software this way is always better
+                    <br>It comes with sometype of hash symbol, that dnf looks for.
+                    If software doesn't have (often from nefarious sites), dnf will not install it.
+                    This makes it harder for hackers and malware
+                </strong>
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/05-chromeRepoList.png"><img  src="images/05-chromeRepoList.png" alt=""></a>
+        </div>
+    </div>
+        <h3>6. Dark Table</h3>
+        <div class="flex-container">
+            <div class="flex-item">
+       
+            <p>
+                &emsp;This packages too resides in a third-party repo. It is a photo editor,
+                <br>like gimp, but works well with raw photos.
+            </p>
+            <p>
+                &emsp;Dark table is in the EPEL repo, type,
+            </p>
+            <code>sudo dnf install -y epel-release</code>
+            <p>
+                &emsp;This software is essential for installing common GUI programs
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/06-darkTableEPEL.png"><img  src="images/06-darkTableEPEL.png" alt=""></a>
+            
+        </div>
+    </div>
+
+    <div class="flex-container br" id="prob7">
+        <div class="flex-item">
+            <h3>7.</h3>
+            <p class="important">
+                THIS is NOT working, need to find out how to do it on centOS  7
+            </p>
+            <p>
+                &emsp;This is disabled by default, to enable it type,
+            </p>
+            <code>sudo dnf config-manager --set-enabled powertools</code>
+            <p class="important">
+                &emsp;I've tried everything, not sure what to do, this is the erro message
+            </p>
+          
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/7-errorProblem.png"><img  src="images/7-errorProblem.png" alt=""></a>
+            
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>

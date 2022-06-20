@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="../../../css/topic.css">
 </head>
 <body>
-    <h1>03-02-installGuestAdditions</h1>
-    <h2>Guest Addition Prerequisites</h2>
+    <h2>03-02-Install Guess Additions in Linux</h2>
+    <h3>Guest Addition Prerequisites</h3>
     <p class="important">the dev tools aren't working, I think im gonna have to use 
         <br>yum. But the loosing of the mouse is really frustrating so im stopping for the day
     </p>
@@ -31,6 +31,7 @@
     </div>
     <div class="flex-container">
         <div class="flex-item">
+            <h3>1.</h3>
             <p>
                 &emsp;To update guest additions open the termainl and enter
             </p>
@@ -42,11 +43,12 @@
             </p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/dnfUpdate-y.png"><img  src="images/dnfUpdate-y.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/1-dnfUpdate-y.png"><img  src="images/1-dnfUpdate-y.png" alt=""></a>
         </div>
     </div>
     <div class="flex-container">
         <div class="flex-item">
+            <h3>2.</h3>
             <p>
                 &emsp;When done type in:
             </p>
@@ -54,52 +56,86 @@
             <p>And hit enter</p>
         </div>
         <div class="flex-item">
-            <a tabindex="2" target="_blank"  href="images/sudoReboot.png"><img  src="images/sudoReboot.png" alt=""></a>
+            <a tabindex="2" target="_blank"  href="images/2-sudoReboot.png"><img  src="images/2-sudoReboot.png" alt=""></a>
         </div>
     </div>
     <div class="flex-container">
         <div class="flex-item">
+            <h3>3.</h3>
             <p>
                 &emsp;After reboot, log back and ensure the network is on
             </p>
-            <a tabindex="2" target="_blank"  href="images/wired copy.png"><img  src="images/wired copy.png" alt=""></a>
         </div>
         <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/3-wiredcopy.png"><img  src="images/3-wiredcopy.png" alt=""></a>
+        </div>
+        
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>4.</h3>
             <p>
                 &emsp;Open the terminal and type the command:
             </p>
             <code>sudo dnf group install -y "Development tools"</code>
-            <a tabindex="2" target="_blank"  href="images/dnfGroupDev.png"><img  src="images/dnfGroupDev.png" alt=""></a>
-        </div> 
-        <div class="flex-container">
-            <div class="flex-item">
-                <p>
-                    &emsp;After this package is installed, install one more by typing:
-                </p>
-                <code>sudo dnf install -y elfutils-libelf-devel </code>
-            </div>
-            <div class="flex-item">
-                <a tabindex="2" target="_blank"  href="images/elfUtil.png"><img  src="images/elfUtil.png" alt=""></a>
-                
-            </div>
+            
         </div>
-        <div class="flex-container br">
-            <div class="flex-item">
-                <p>
-                    <span class="important">This Had To be done Before installing the packages, but the tutorial said otherwise</span>
-                    &emsp;After this you have to insert the <q>virtual guess edition cd</q>.
-                    <br>To do this go to the <q>Devices</q> tab 
-                    <br>This will take a few minutes because it has to compile a new 
-                    <br>kernal module
-                </p>
-            </div>
-            <div class="flex-item">
-                <a tabindex="2" target="_blank"  href="images/insertGuestAdd.png"><img  src="images/insertGuestAdd.png" alt=""></a>
-                
-            </div>
+        <div class="flex-item">
+         
+            <a tabindex="2" target="_blank"  href="images/4-dnfGroupDev.png"><img  src="images/4-dnfGroupDev.png" alt=""></a>
+        </div> 
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>5.</h3>
+            <p>
+                &emsp;After this package is installed, install one more by typing:
+            </p>
+            <code>sudo dnf install -y elfutils-libelf-devel </code>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/5-elfUtil.png"><img  src="images/5-elfUtil.png" alt=""></a>
             
         </div>
     </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>6.</h3>
+            <p>
+               
+                &emsp;After this you have to insert the <q>virtual guess edition cd</q>.
+                <br>To do this go to the <q>Devices</q> tab 
+                <br>This will take a few minutes because it has to compile a new 
+                <br>kernal module
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/6-insertGuestAdd.png"><img  src="images/6-insertGuestAdd.png" alt=""></a>
+            
+        </div>
+        
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;You can now change the display resolution
+            </p>
+        </div>
+        <div class="flex-item">
+            <video tabindex="2" src="videos/display.mov" autoplay loop controls play></video>
+            
+        </div>
+        
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>
+                &emsp;Take a snap shot and name it guest additions
+            </p>
+        </div>
+    </div>
+   
     
 </body>
 </html>

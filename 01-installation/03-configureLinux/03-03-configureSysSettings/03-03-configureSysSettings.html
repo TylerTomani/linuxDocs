@@ -8,92 +8,139 @@
     <link rel="stylesheet" href="../../../css/topic.css">
 </head>
 <body>
-    <h1>03-03-configureSysSettings</h1>
-    <p>
-        &emsp;After guest installations are complete, now would be a good 
-        <br>time to,
-    </p>
-    <ul>
-        <li>set a host name</li>
-        <li>set date and time</li>
-        <li>change language</li>
-        <li>edit shortcuts</li>
-    </ul>
+    <h2>03-03-Configure basic system settings</h2>
+    <!-- <div class="flex-container">
+        <div class="problem-item">
+        <a class="problemA" id="prob5Btn"tabindex="1" href="#prob5">click here to get to Problem #5</a>
+        </div>
+    </div> -->
     <div class="flex-container">
         <div class="flex-item">
+            <p>
+                &emsp;After guest installations are complete, now would be a good 
+                <br>time to,
+            </p>
+            <ul>
+                <li>set a host name</li>
+                <li>set date and time</li>
+                <li>change language</li>
+                <li>edit shortcuts</li>
+            </ul>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>1.</h3>
             <p>
                 &emsp;Set the network to <q>auto connect</q>, Go to the main
                 <q>Settings</q>&rarr;<q>Network</q>
             </p>
         </div>
         <div class="flex-item">
-            <img tabindex="2" src="images/1-settings-network.png" alt="">
-            
+            <a tabindex="2" target="_blank"  href="images/1-settings-network.png"><img  src="images/1-settings-network.png" alt=""></a>
         </div>
     </div>
     <div class="flex-container">
         <div class="flex-item">
+            <h2>2.</h2>
             <p>
                 &emsp;Under <q>Wired</q> make sure connection is turned on
             </p>
         </div>
         <div class="flex-item">
-            <img tabindex="2" src="images/2-wired.png" alt="">
-            
+            <a tabindex="2" target="_blank"  href="images/2-wired.png"><img  src="images/2-wired.png" alt=""></a>
         </div>
-        
     </div>
+
     <div class="flex-container">
         <div class="flex-item">
+            <h3>3.</h3>
             <p>
-                &emsp;To turn on <q>auto connect</q>click the gear icon 
+                &emsp;To set up <q>auto connect</q>click the gear icon 
                 <br>and select <q>auto automatically</q>, Then click Apply
             </p>
         </div>
         <div class="flex-item">
-            <img tabindex="2" src="images/3-connectAuto.png" alt="">
-            
+            <a tabindex="2" target="_blank"  href="images/3-connectAuto.png"><img  src="images/3-connectAuto.png" alt=""></a>        
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>4.</h3>
+            <p>
+                &emsp;To change the <q>host name</q> click on 
+                the <q>details</q> tab at the bottom left
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/4-details.png"><img  src="images/4-details.png" alt=""></a>
         </div>
     </div>
     <div class="flex-container">
         <div class="flex-item">
-            <p>
-                &emsp;Change the <q>host name</q> by clicking on 
-                the <q>details</q> tab at the bottom left
-            </p>
-            <img tabindex="2" src="images/4-details.png" alt="">
+            <h3>5.</h3>
             <p>
                 &emsp;There you can change the host name
             </p>
         </div>
         <div class="flex-item">
-            <img tabindex="2" src="images/5-hostname.png" alt="">
+            <a tabindex="2" target="_blank"  href="images/5-hostname.png"><img  src="images/5-hostname.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>6.</h3>
+            <p>
+                &emsp;You can have time changed <span class="undero">automatically</span>
+                <br>or set it up <span class="bv">manually</span>
+            </p>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/6-time.png"><img  src="images/6-time.png" alt=""></a>
             
         </div>
     </div>
-    <div class="flex-container">
-            <p>
-                &emsp;While stil in <q>details</q> you can change time,
-            </p>
 
-    </div>
     <div class="flex-container">
         <div class="flex-item">
             <p>
                 &emsp;There is one lower level configuration setting you might 
                 <br>want to change at this time.
-                <br>&emsp;Open the terminal and type in the command
+            </p>
+            <p>
+                &emsp;Under the GUI there was a display server that manages 
+            </p>
+            <ul>
+                <li>Video card drivers</li>
+                <li>and how the Graphical Interface is drawn</li>
+            </ul>
+            <p>
+                &emsp;In the past this was X.org, but now this configuration is found 
+                in <q>Wayland</q>, and Enterprise Linux 8 uses Wayland by default
+            </p>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>7.</h3>
+            <p>
+                &emsp;Open the terminal and type in the command
             </p>
             <code>gedit admin:///etc/gdm/custom.conf</code>
+            <p>
+                &emsp;If it doesn't work, type in
+            </p>
+            <code>sudo </code>
             
         </div>
         <div class="flex-item">
-            <img tabindex="2" src="images/6-gedit.png" alt="">
-            
+            <a tabindex="2" target="_blank"  href="images/7-gedit.png"><img  src="images/7-gedit.png" alt=""></a>
         </div>
         
     </div>
-    <div class="flex-container">
+    <div class="flex-container br" id="prob5">
         <div class="flex-item">
             <p>
                 &emsp;This is the file that configures the dispay server,
@@ -101,11 +148,18 @@
                 <br>up the file, uncomment the line with <q>WaylandEnable=false</q>
                 <br>&emsp;Click save, then reboot, after reboot create a new snap shot
             </p>
+            <p class="important">
+                Wayland Does Not appear in this file, So I just added it
+            </p>
         </div>
         <div class="flex-item">
-            <img tabindex="2" src="images/7-wayland.png" alt="">
+            <a tabindex="2" target="_blank"  href="images/8-waylandDoes.png"><img  src="images/8-waylandDoes.png" alt=""></a>
+        </div>
+        <div class="flex-item">
+            <a tabindex="2" target="_blank"  href="images/9-waylandAdd.png"><img  src="images/9-waylandAdd.png" alt=""></a>
             
         </div>
+        
         
     </div>
     

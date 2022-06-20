@@ -17,17 +17,18 @@
     border-radius: 20px;
     color: tomato
 }
-
+.main-document-header-container {
+    border-bottom: 2px solid orange;
+    height: 20vh;
+    display: flex;
+}
 
 .main-document-header-container > #main-header-right {
     display: flex;
     gap: 1rem;
     flex-direction: row;
 }
-.main-document-header-container {
-    border-bottom: 2px solid orange;
-    display: flex;
-}
+
 .main-document-header-container > div {
     display: flex;
     justify-content: center;
@@ -127,6 +128,7 @@ div.article-actions-container > .btn {
     font-size: 110%;
     font-weight: 999;
 }
+
 @media screen and  (max-width:545px) {
     .main-document-header-container {
         overflow-x: scroll;
